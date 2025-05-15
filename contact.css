@@ -1,0 +1,139 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active,
+nav a:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact-section h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.contact-section p {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+  gap: 40px;
+}
+
+/* Contact Form */
+.contact-form {
+  flex: 1 1 45%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.contact-form button:hover {
+  background-color: #444;
+}
+
+/* Contact Info */
+.contact-info {
+  flex: 1 1 45%;
+  text-align: left;
+}
+
+.contact-info h4 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+}
